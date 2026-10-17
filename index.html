@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>A birthday surprise 🎂</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="moon"></div>
+<canvas id="c"></canvas>
+<div class="top"><button id="mus" aria-label="Toggle music">🎵 Music: on</button></div>
+
+<section class="scene on" id="s0">
+  <div class="glass">
+    <div class="gift">🎁</div>
+    <p class="eyebrow" style="margin-top:14px">Something special</p>
+    <h1 id="hi">For you</h1>
+    <p>Someone made a little surprise for your day.<br>Ready to open it?</p>
+    <button class="btn" id="go">Begin ✨</button>
+  </div>
+</section>
+
+<section class="scene" id="s1"><div id="count">3</div></section>
+
+<section class="scene" id="s2">
+  <svg class="cake" id="cake" viewBox="0 0 300 260" aria-label="Birthday cake">
+    <defs>
+      <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffb3d1"/><stop offset="1" stop-color="#ff6b9d"/></linearGradient>
+      <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe3a8"/><stop offset="1" stop-color="#f5b95f"/></linearGradient>
+      <radialGradient id="fg" cx=".5" cy=".7" r=".6"><stop offset="0" stop-color="#fff6c8"/><stop offset=".5" stop-color="#ffc247"/><stop offset="1" stop-color="#ff7a2f"/></radialGradient>
+    </defs>
+    <ellipse cx="150" cy="244" rx="130" ry="12" fill="#00000055"/>
+    <ellipse cx="150" cy="236" rx="125" ry="14" fill="#e9d8f5"/>
+    <rect x="45" y="165" width="210" height="68" rx="10" fill="url(#g2)"/>
+    <path d="M45 175 q15 22 30 0 q15 26 30 0 q15 22 30 0 q15 26 30 0 q15 22 30 0 q15 26 30 0 v-10 h-210z" fill="#fff4fa"/>
+    <rect x="80" y="105" width="140" height="62" rx="10" fill="url(#g1)"/>
+    <path d="M80 114 q12 20 23 0 q12 24 23 0 q12 20 23 0 q12 24 23 0 q12 20 23 0 q12 24 22 0 v-9 h-140z" fill="#fff4fa"/>
+    <g fill="#ffd27a"><circle cx="100" cy="205" r="5"/><circle cx="150" cy="212" r="5"/><circle cx="200" cy="205" r="5"/></g>
+    <g class="glowc">
+      <g fill="#c9a0ff"><rect x="105" y="72" width="8" height="34" rx="3"/><rect x="127" y="66" width="8" height="40" rx="3" fill="#8ecae6"/><rect x="146" y="62" width="8" height="44" rx="3" fill="#ffd27a"/><rect x="165" y="66" width="8" height="40" rx="3" fill="#8ecae6"/><rect x="187" y="72" width="8" height="34" rx="3"/></g>
+      <g>
+        <ellipse class="flame" cx="109" cy="62" rx="6" ry="11" fill="url(#fg)"/>
+        <ellipse class="flame" cx="131" cy="56" rx="6" ry="11" fill="url(#fg)"/>
+        <ellipse class="flame" cx="150" cy="52" rx="6" ry="11" fill="url(#fg)"/>
+        <ellipse class="flame" cx="169" cy="56" rx="6" ry="11" fill="url(#fg)"/>
+        <ellipse class="flame" cx="191" cy="62" rx="6" ry="11" fill="url(#fg)"/>
+      </g>
+    </g>
+  </svg>
+  <p class="note" id="note">Close your eyes, make a wish…<br>then blow out the candles 🌬️</p>
+  <button class="btn" id="blow">Blow out the candles</button>
+</section>
+
+<section class="scene" id="s3">
+  <div class="glass">
+    <p class="eyebrow" id="step">A few words for you</p>
+    <div class="card" id="card"></div>
+    <div class="dots" id="dots"></div>
+    <button class="btn" id="next">Next 💌</button>
+  </div>
+</section>
+
+<section class="scene" id="sp">
+  <div class="glass">
+    <p class="eyebrow">A few moments worth remembering</p>
+    <div class="frame" id="frame"><img id="pimg" alt=""><div class="cap" id="pcap"></div></div>
+    <div class="dots" id="pdots"></div>
+    <button class="btn ghost" id="pprev" aria-label="Previous photo">&#8249;</button>
+    <button class="btn" id="pnext">Next &#8250;</button>
+  </div>
+</section>
+
+<section class="scene" id="s4">
+  <div class="glass">
+    <p class="eyebrow">Today is all yours</p>
+    <div class="heart3d" id="heart" aria-hidden="true"></div>
+    <h1 id="fin">Happy Birthday!</h1>
+    <p id="finmsg">May this year be your brightest one yet.</p>
+    <div class="sig" id="sig"></div>
+    <button class="btn" id="more">More fireworks 🎆</button>
+    <button class="btn ghost" id="again" style="margin-left:6px">Replay</button>
+  </div>
+</section>
+
+<section class="scene" id="sw">
+  <div class="glass">
+    <p class="eyebrow">My wishes for you</p>
+    <div class="wgrid" id="wgrid"></div>
+    <button class="btn" id="wcont">Continue &#8250;</button>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
