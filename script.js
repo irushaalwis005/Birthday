@@ -10,7 +10,7 @@ var LINES=[
 var WISHES=[["🌿","Good health"],["😊","Happiness"],["🎓","Success"],["🕊️","Peace"],["🌸","Beautiful days"]];
 /* 📸 Her photos: put image files in the images folder and list them here */
 var PHOTOS=[
- {src:"images/photo1.jpg",cap:"Smile like that, always"}
+ {src:"photo1.jpg",cap:"Smile like that, always"}
   /* add more: {src:"photo1.jpg",cap:"Your caption"} */
 ];
 var FINAL="Wishing you a wonderful year ahead.";
